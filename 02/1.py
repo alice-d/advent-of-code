@@ -6,7 +6,7 @@ for l in lines:
     mini, maxi = map(int,limits.split("-"))
 
     occurences = passw.count(letter)
-    if (occurences>=mini and occurences<=maxi):
+    if (mini <= occurences <= maxi):
         valid+=1
 
 print(valid)

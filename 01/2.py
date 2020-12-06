@@ -12,13 +12,10 @@ def find_num_that_sums_to_x(savedOfThisSum, allTheNums, target, third):
             savedOfThisSum.append(curr)
     return False
 
-with open("input.txt") as file: 
-    inp = file.readline()
-    while inp != "":
-        num = int(inp)
-        sumOf2 = 2020 - num
-        if ( find_num_that_sums_to_x([],saved,sumOf2, num) ):
-            break
-        saved.append(num)
-        inp = file.readline()
-print("done")
+with open("input.txt") as file: lines = file.read().splitlines()
+for l in lines:
+    num = int(l)
+    sumOf2 = 2020 - num
+    if ( find_num_that_sums_to_x([],saved,sumOf2, num) ):
+        break
+    saved.append(num)
