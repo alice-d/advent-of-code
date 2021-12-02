@@ -1,3 +1,4 @@
+## Work in progress (regarding part 2) ##
 with open("input") as file: lines = file.read().splitlines()
 
 blacks=[]
