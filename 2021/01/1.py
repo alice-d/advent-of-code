@@ -1,5 +1,3 @@
-inp=""
-saved = []
 with open("input.txt") as file: lines = list(map(int, file.read().splitlines()))
 
 prev = int(lines[0])
