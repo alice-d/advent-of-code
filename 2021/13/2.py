@@ -21,11 +21,11 @@ def fold(axis, value, coords):
 def printStuff(coords):
     maxX = max(coords)[0]+1
     maxY = max(coords, key=lambda x:x[1])[1]+1
-    map=[["."]*maxX for _ in range(maxY)]
+    map=[[" "]*maxX for _ in range(maxY)]
 
     for c in coords:
         x,y = c
-        map[y][x] = "#"
+        map[y][x] = "█"
     for line in map:
         print("".join(line))
     print()
