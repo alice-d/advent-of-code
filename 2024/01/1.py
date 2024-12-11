@@ -22,4 +22,4 @@ while len(right) >0:
     part1 += abs(minL-minR)
 
 print("Part 1: ", part1)
-print("Part 2: ",part2)
+print("Part 2: ", part2)
